@@ -10,7 +10,7 @@ Installation
 
 1. Install [Python 2.7](https://www.python.org/ftp/python/2.7.11/python-2.7.11.msi).
 2. Install [FTDI Drivers](http://www.ftdichip.com/Drivers/CDM/CDM%20v2.12.12%20WHQL%20Certified.exe)
-3. Download [Bioprint 1.0](https://github.com/biobotsdev/bioprint/archive/1.0.zip) and extract to desired location on your computer.
+3. Download [Bioprint 1.0](https://github.com/biobotsdev/bioprint/archive/master.zip) and extract to desired location on your computer.
 4. Navigate to `bioprint-1.0/Windows` folder on your file system.
 5. Right-click `Install.bat` file and "Run As Administrator".
 6. Double-click `Bioprint.bat` and leave the Command Prompt Window open. If you receive an error, press any key to close the window and try running `Bioprint_firewall.bat`.
@@ -21,7 +21,7 @@ Installation
 ### Mac OSX
 
 1. Install [Python 2.7](https://www.python.org/ftp/python/2.7.11/python-2.7.11-macosx10.6.pkg).
-2. Download [Bioprint 1.0](https://github.com/biobotsdev/bioprint/archive/1.0.zip) and extract to desired location on your computer.
+2. Download [Bioprint 1.0](https://github.com/biobotsdev/bioprint/archive/master.zip) and extract to desired location on your computer.
 3. Navigate to `bioprint-1.0/MacOSX` folder on your file system.
 4. Double-click `Install.command` and enter your Administrator password when prompted. Press Return to reboot when prompted.
 5. After rebooting, download and install [FTDI Drivers](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg)
