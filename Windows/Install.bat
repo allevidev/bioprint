@@ -6,4 +6,5 @@ cd "%~dp0"
 cd ../bioprint
 
 C:\Python27\Scripts\easy_install.exe bioprint-latest.egg
+
 pause
