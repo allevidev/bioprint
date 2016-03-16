@@ -14,7 +14,7 @@ Installation
 4. Navigate to `bioprint-1.1/Windows` folder on your file system.
 5. Right-click `Install.bat` file and "Run As Administrator".
 6. Double-click `Bioprint.bat` and leave the Command Prompt Window open. If you receive an error, press any key to close the window and try running `Bioprint_firewall.bat`.
-7. Navigate to [bioprint](http://bioprint/) in your browser if you ran `Bioprint.bat` or [bioprint_firewall](http//bioprint_firewall/) if you ran `Bioprint_firewall.bat`
+7. Navigate to [bioprint](http://bioprint/) in your browser if you ran `Bioprint.bat` or [bioprint:9999](http//bioprint:9999/) if you ran `Bioprint_firewall.bat`
 8. Setup a username and password to use with Bioprint.
 9. Begin printing with life!
 
