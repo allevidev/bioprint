@@ -93,7 +93,7 @@ $(function() {
         self.position = {}
         
         
-        self.midpoint = 24;
+        self.midpoint = 22;
         self.xTravel = 48.33;
 
         self.tools = ko.observableArray([self._createToolEntry(), self._createToolEntry()]);

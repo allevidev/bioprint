@@ -251,7 +251,7 @@ e0_Yctr = 90
 e1_Xctr = 104.33
 e1_Yctr = 90
 
-mid = 24
+mid = 22
 
 x_pattern = 'X([+-]?\d+(?:\.\d+)?)'
 y_pattern = 'Y([+-]?\d+(?:\.\d+)?)'
