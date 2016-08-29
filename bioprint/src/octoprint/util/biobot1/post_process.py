@@ -697,61 +697,61 @@ def post_process(payload, positions, wellPlate, cl_params, tempData):
                 f.close()
         o.write(end_print() + '\n')
     o.close()
-    if connected_to_biobots() and current_user:
-        user_info = {
-            'email': current_user.get_email(),
-            'serial': current_user.get_serial()
-        }
+    # if connected_to_biobots() and current_user:
+    #     user_info = {
+    #         'email': current_user.get_email(),
+    #         'serial': current_user.get_serial()
+    #     }
 
-        permission = requests.post(biobots_url+'/permission', json=user_info)
+    #     permission = requests.post(biobots_url+'/permission', json=user_info)
         
-        credentials = json.loads(permission.text)["Credentials"]
+    #     credentials = json.loads(permission.text)["Credentials"]
         
-        s3 = boto3.resource('s3', aws_access_key_id=credentials["AccessKeyId"], aws_secret_access_key=credentials["SecretAccessKey"], aws_session_token=credentials["SessionToken"])
-        folder = user_info['email'] + '/' + str(user_info['serial']) + '/' + timestamp + '/'
-        inputObject = s3.Object('biobots-analytics', folder + inputFileName);
-        inputObject.put(ACL='public-read', Body=open(filename, 'rb'))
-        outputObject = s3.Object('biobots-analytics', folder + outputFileName);
-        outputObject.put(ACL='public-read', Body=open(outputFile, 'rb'))
+    #     s3 = boto3.resource('s3', aws_access_key_id=credentials["AccessKeyId"], aws_secret_access_key=credentials["SecretAccessKey"], aws_session_token=credentials["SessionToken"])
+    #     folder = user_info['email'] + '/' + str(user_info['serial']) + '/' + timestamp + '/'
+    #     inputObject = s3.Object('biobots-analytics', folder + inputFileName);
+    #     inputObject.put(ACL='public-read', Body=open(filename, 'rb'))
+    #     outputObject = s3.Object('biobots-analytics', folder + outputFileName);
+    #     outputObject.put(ACL='public-read', Body=open(outputFile, 'rb'))
 
-        tool0 = {
-            "temperature": {
-                "actual": tempData['tool0']['actual'],
-                "target": tempData['tool0']['target']
-            },
-            "pressure": tempData['bed']['actual'],
-            "X": positions["tool0"]["X"],
-            "Y": positions["tool0"]["Y"],
-            "E": positions["tool0"]["E"]
-        }
-        tool1 = {
-            "temperature": {
-                "actual": tempData['tool1']['actual'],
-                "target": tempData['tool1']['target']
-            },
-            "pressure": tempData['tool2']['actual'],
-            "X": positions["tool1"]["X"],
-            "Y": positions["tool1"]["Y"],
-            "E": positions["tool1"]["E"]
-        }
+    #     tool0 = {
+    #         "temperature": {
+    #             "actual": tempData['tool0']['actual'],
+    #             "target": tempData['tool0']['target']
+    #         },
+    #         "pressure": tempData['bed']['actual'],
+    #         "X": positions["tool0"]["X"],
+    #         "Y": positions["tool0"]["Y"],
+    #         "E": positions["tool0"]["E"]
+    #     }
+    #     tool1 = {
+    #         "temperature": {
+    #             "actual": tempData['tool1']['actual'],
+    #             "target": tempData['tool1']['target']
+    #         },
+    #         "pressure": tempData['tool2']['actual'],
+    #         "X": positions["tool1"]["X"],
+    #         "Y": positions["tool1"]["Y"],
+    #         "E": positions["tool1"]["E"]
+    #     }
 
-        print_info = {
-            'input': inputObject.key,
-            'output': outputObject.key,
-            'tool0': tool0,
-            'tool1': tool1,
-            'positions': positions,
-            'wellPlate': wellPlate,
-            'cl_params': cl_params
-        }
+    #     print_info = {
+    #         'input': inputObject.key,
+    #         'output': outputObject.key,
+    #         'tool0': tool0,
+    #         'tool1': tool1,
+    #         'positions': positions,
+    #         'wellPlate': wellPlate,
+    #         'cl_params': cl_params
+    #     }
 
-        print print_info
+    #     print print_info
 
-        data = {
-            'user_info': user_info,
-            'print_info': print_info
-        };
-        requests.post(biobots_url+'/analytics', json=data).text;
+    #     data = {
+    #         'user_info': user_info,
+    #         'print_info': print_info
+    #     };
+    #     requests.post(biobots_url+'/analytics', json=data).text;
     
     return {
         "file": outputFile,
