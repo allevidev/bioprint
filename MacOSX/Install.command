@@ -6,7 +6,7 @@ sudo touch /System/Library/Extensions
 
 cd $DIR
 cd ../bioprint
-sudo easy_install bioprint-latest.egg
+sudo easy_install bioprint-bioprint-py2.7.egg
 sudo -- sh -c "echo '127.0.0.1 bioprint' >> /etc/hosts"
 sudo -- sh -c "echo '127.0.0.1:9999 bioprint_firewall' >> /etc/hosts"
 

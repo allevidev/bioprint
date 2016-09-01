@@ -5,6 +5,6 @@ echo 127.0.0.1 bioprint >> %hostspath%
 cd "%~dp0"
 cd ../bioprint
 
-C:\Python27\Scripts\easy_install.exe bioprint-latest.egg
+C:\Python27\Scripts\easy_install.exe bioprint-bioprint-py2.7.egg
 
 pause
