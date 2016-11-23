@@ -2,6 +2,8 @@ set hostspath=%windir%\System32\drivers\etc\hosts
 
 echo 127.0.0.1 bioprint >> %hostspath%
 
+setx path "%path%;C:\Python27;C:\Python27\Scripts"
+
 cd "%~dp0"
 cd ../bioprint
 
