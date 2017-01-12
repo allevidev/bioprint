@@ -8,7 +8,7 @@ cd $DIR
 cd ../bioprint
 sudo pip install virtualenv
 virtualenv biobots
-./biobots/activate  
+source biobots/bin/activate
 sudo easy_install bioprint-bioprint-1.4-py2.7.egg
 sudo -- sh -c "echo '127.0.0.1 bioprint' >> /etc/hosts"
 sudo -- sh -c "echo '127.0.0.1:9999 bioprint_firewall' >> /etc/hosts"
