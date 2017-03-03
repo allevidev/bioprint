@@ -1,0 +1,56 @@
+Metadata-Version: 1.1
+Name: bioprint
+Version: bioprint
+Summary: A responsive web interface for 3D printers
+Home-page: http://bioprint.org
+Author: Gina Häußge
+Author-email: osd@foosel.net
+License: AGPLv3
+Description: BioPrint
+        =========
+        
+        BioPrint provides a  web interface for controlling a the BioBot1 3D Biomaterial printer
+        
+        Installation
+        ------------
+        
+        ### Windows
+        
+        1. Install [Python 2.7](https://www.python.org/ftp/python/2.7.11/python-2.7.11.msi).
+        2. Download [Bioprint 1.0](https://github.com/biobotsdev/bioprint/archive/1.0.zip) and extract to desired location on your computer.
+        3. Navigate to `bioprint-1.0/Windows` folder on your file system.
+        4. Right-click `Install.bat` file and "Run As Administrator".
+        5. Double-click `Bioprint.bat` and leave the Command Prompt Window open.
+        6. Navigate to [bioprint](http://bioprint/) in your browser.
+        7. Setup a username and password to use with Bioprint.
+        8. Begin printing with life!
+        
+        ### Mac OSX
+        
+        1. Install [Python 2.7](https://www.python.org/ftp/python/2.7.11/python-2.7.11-macosx10.6.pkg).
+        2. Download [Bioprint 1.0](https://github.com/biobotsdev/bioprint/archive/1.0.zip) and extract to desired location on your computer.
+        3. Navigate to `bioprint-1.0/MacOSX` folder on your file system.
+        4. Double-click `Install.command` and enter your Administrator password when prompted
+        5. Double-click `Bioprint.command` and leave the Terminal Window open.
+        6. Navigate to [bioprint](http://bioprint/) in your browser.
+        7. Setup a username and password to use with Bioprint.
+        8. Begin printing with life!
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Printing
+Classifier: Topic :: System :: Networking :: Monitoring
