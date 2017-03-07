@@ -10,7 +10,8 @@ cd ../bioprint
 C:\Python27\Scripts\pip.exe install virtualenv
 call virtualenv -p C:\Python27\python.exe biobots
 cd ../bioprint/biobots/Scripts & activate
-cd ../../ & pip install -r bioprint-requirements.txt
+cd ../../ 
+call pip install -r bioprint-requirements.txt
 call easy_install bioprint-bioprint-1.4-py2.7.egg
 
 pause
