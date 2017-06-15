@@ -4,6 +4,8 @@ cd /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns
 sudo mv AppleUSBFTDI.kext AppleUSBFTDI.disabled 
 sudo touch /System/Library/Extensions
 
+xcode-select --install
+
 cd $DIR
 cd ../bioprint
 sudo pip install virtualenv
