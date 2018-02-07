@@ -10,13 +10,14 @@ Installation
 
 1. Install [Python 2.7](https://www.python.org/ftp/python/2.7.11/python-2.7.11.msi).
 2. Install [FTDI Drivers](http://www.ftdichip.com/Drivers/CDM/CDM%20v2.12.12%20WHQL%20Certified.exe)
-3. Download [Bioprint](https://github.com/biobotsdev/bioprint/archive/master.zip) and extract to desired location on your computer.
-4. Navigate to `bioprint-master/Windows` folder on your file system.
-5. Right-click `Install.bat` file and "Run As Administrator".
-6. Double-click `Bioprint.bat` and leave the Command Prompt Window open. If you receive an error, press any key to close the window and try running `Bioprint_firewall.bat`.
-7. Navigate to [bioprint](http://bioprint/) in your browser if you ran `Bioprint.bat` or [bioprint:9999](http//bioprint:9999/) if you ran `Bioprint_firewall.bat`
-8. Setup a username and password to use with Bioprint.
-9. Begin printing with life!
+3. Install [Microsoft C++ Compiler](https://download.microsoft.com/download/7/9/6/796EF2E4-801B-4FC4-AB28-B59FBF6D907B/VCForPython27.msi)
+4. Download [Bioprint](https://github.com/biobotsdev/bioprint/archive/master.zip) and extract to desired location on your computer.
+5. Navigate to `bioprint-master/Windows` folder on your file system.
+6. Right-click `Install.bat` file and "Run As Administrator".
+7. Double-click `Bioprint.bat` and leave the Command Prompt Window open. If you receive an error, press any key to close the window and try running `Bioprint_firewall.bat`.
+8. Navigate to [bioprint](http://bioprint/) in your browser if you ran `Bioprint.bat` or [bioprint:9999](http//bioprint:9999/) if you ran `Bioprint_firewall.bat`
+9. Setup a username and password to use with Bioprint.
+10. Begin printing with life!
 
 ### Mac OSX
 
