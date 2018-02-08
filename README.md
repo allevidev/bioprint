@@ -1,7 +1,7 @@
 BioPrint
 =========
 
-BioPrint provides a  web interface for controlling a the BioBot1 3D Biomaterial printer
+BioPrint provides a  web interface for controlling the Allevi 2 3D Bioprinter
 
 Installation
 ------------
